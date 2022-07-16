@@ -7,8 +7,10 @@
         "setup": "gem install bundler && bundle install && npm i",
         "start": "concurrently --kill-others \"npm run css:dev\" \"jekyll serve\"",
         "build": "npm run css:rel && jekyll build",
+        "publish": "npm run build && g ps",
         "css:dev": "parcel watch styles/index.css --no-source-maps",
-        "css:rel": "parcel build styles/index.css --no-source-maps"
+        "css:rel": "parcel build styles/index.css --no-source-maps",
+        "exec": "bundle exec jekyll serve --livereload"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^3.0.0",

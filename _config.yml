@@ -1,7 +1,7 @@
 google_analytics:
 
-title: Your site title
-description: Your site description
+title: Penrose Development
+description: Software Engineering for Small Busness
 
 plugins:
   - jekyll-seo-tag
