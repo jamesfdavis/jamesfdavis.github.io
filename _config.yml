@@ -12,4 +12,3 @@ exclude:
   - README.md
   - src
   - tailwind.config.js
-theme: jekyll-theme-cayman
