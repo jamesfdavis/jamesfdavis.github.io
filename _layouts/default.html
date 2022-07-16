@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+---
+---
 
-<head>
-    {% include head.html %}
-</head>
+{% include header.html %}
 
-<body class="antialiased text-gray-900 min-h-screen">
-    {{ content }}
-    {% include scripts.html %}
-</body>
+<main
+  class="bg-indigo-500 flex h-screen items-center justify-center w-full"
+>
+  {{ content }}
+</main>
 
-</html>
+{% include footer.html %}

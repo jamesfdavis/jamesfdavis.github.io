@@ -1,16 +1,14 @@
-google_analytics:
-
 title: Penrose Development
-description: Software Engineering for Small Busness
+description: Software Engineering
 
-plugins:
-  - jekyll-seo-tag
-
-exclude: [
-  styles/index.css,
-  styles/syntax.css,
-  package.json,
-  package-lock.json,
-  postcss.config.js,
-  readme.md,
-]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js

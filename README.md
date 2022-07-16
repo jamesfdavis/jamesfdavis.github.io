@@ -1,113 +1,74 @@
-<div align="center">
+# Jekyll Starter Tailwind
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
-# Jekyll & Tailwind CSS Boilerplate
+A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https://jekyllrb.com/) that includes:
+* A barebones Jekyll starter theme
+* A Gulpfile that does the following:
 
-A bare bones [Jekyll](https://jekyllrb.com/) site which comes preconfigured to use [Tailwind CSS](https://tailwindcss.com/) for styling.
+    * Compiles Tailwind
+    * Strips out unused CSS using Tailwind's `purge` option
+    * Runs [Autoprefixer](https://github.com/postcss/autoprefixer)
+    * Minifies your CSS
+    * Compiles Jekyll
+    * Runs [Browsersync](https://www.browsersync.io/) for local development
 
-👉 [Try the demo here](https://jekyll-tailwindcss-boilerplate.netlify.app/) 👈
+## What is Tailwind?
+>"Tailwind is a utility-first CSS framework for rapidly building custom user interfaces."
+–[Tailwind](https://tailwindcss.com)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a783907c-769f-4399-80fd-3b6d511868ff/deploy-status)](https://app.netlify.com/sites/jekyll-tailwindcss-boilerplate/deploys)
-</div>
+## What is Jekyll?
+>"Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories."
+–[Jekyll](https://jekyllrb.com/)
 
-## Features
+## Requirements
+* [Bundler](http://bundler.io/)
+* [Jekyll](https://jekyllrb.com/)
+* [Node.js](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
+* [Ruby](https://www.ruby-lang.org/en/)
 
-- 🤍 Ships free of styling or theming. You can:
-    - [Add a theme](https://jekyllrb.com/resources/)
-    - [Get started with Tailwind CSS](https://tailwindcss.com/docs/utility-first/)
-    - Use the [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) plugin ([see example](https://jekyll-tailwindcss-boilerplate.netlify.app/2020/01/01/demo.html))
-- 📈 Ships Google Analytics and SEO ready
-- 🍕 Dev mode: your Jekyll site is refreshed on file changes and all Tailwind CSS classes are available for use.
-- 💻 Release mode: CSS is optimised by striping out unused classes and minifying the file.
+## Get started
+* `bundle install` to install Ruby gems
+* `npm ci` to install npm packages listed in `package-lock.json`
+* `npm run start` or `npm run dev` to compile the site with development settings and run BrowserSync
 
----
+## Build your site
+* `npm run build:dev` to compile the site with development settings
+* `npm run build:production` or `npm run build` to compile the site for production
 
-## 👟 Install
 
-Ensure [Ruby](https://www.ruby-lang.org/en/downloads/) and [node](https://nodejs.org) (v12.13+) are installed then setup the project:
-```
-npm run setup
-```
+## Deploy
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/jekyll-starter-tailwind)
 
-Configure Jekyll via `_config.yml`:
-- Add your site title and description
-- Add your google anlaytics ID
-- Add seo config via [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) docs
+Note: By default, Netlify uses `jekyll build` as the build command. The included `netlify.toml` file will override it to use `npm run build`.
 
-## 🍕 Develop
+## License
+[MIT](https://github.com/taylorbryant/jekyll-starter-tailwind/blob/master/LICENSE.md)
 
-```
-npm start
-```
-Open your page on [localhost:4000](http://localhost:4000). Parcel and Jekyll will run concurrently so file changes update automatically.
+## How you can help
+Enjoying Jekyll Starter Tailwind and want to help? You can:
+* [Create an issue](https://github.com/taylorbryant/jekyll-starter-tailwind/issues/new) with some constructive criticism
+* [Submit a pull request](https://github.com/taylorbryant/jekyll-starter-tailwind/compare) with some improvements to the project
 
-> :warning: **CSS might not render on the very first load.** :warning:
->
-> Simply open `styles/index.css` in your local text editor, save the file to trigger an update, [wait until Parcel/Jekyll update](https://raw.githubusercontent.com/kangabru/jekyll-tailwindcss-boilerplate/assets/regenerate-log.jpg), then refresh your browser.
->
-> Jekyll and Parcel run concurrently in dev builds so the CSS may not generate in time. This only happens once (when the file doesn't exist) and is not an issue in prod builds.
+## Contributors
 
-## 💻 Release
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-```
-npm run build
-```
-Tailwind CSS is minified and Jekyll outputs the site to the `_site` folder.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://phproberto.com"><img src="https://avatars0.githubusercontent.com/u/1119272?v=4" width="100px;" alt=""/><br /><sub><b>Roberto Segura</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=phproberto" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/benmp"><img src="https://avatars3.githubusercontent.com/u/9081154?v=4" width="100px;" alt=""/><br /><sub><b>benmp</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=benmp" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jd4no"><img src="https://avatars0.githubusercontent.com/u/15043675?v=4" width="100px;" alt=""/><br /><sub><b>Joey Defourneaux</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=jd4no" title="Code">💻</a></td>
+    <td align="center"><a href="https://shime.sh"><img src="https://avatars3.githubusercontent.com/u/703563?v=4" width="100px;" alt=""/><br /><sub><b>Hrvoje Šimić</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=shime" title="Code">💻</a></td>
+    <td align="center"><a href="https://alejof.dev"><img src="https://avatars2.githubusercontent.com/u/7116453?v=4" width="100px;" alt=""/><br /><sub><b>Alejandro Figueroa</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=alexphi" title="Code">💻</a></td>
+  </tr>
+</table>
 
-[![Deploy on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kangabru/jekyll-tailwindcss-boilerplate)
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Deploy statically (e.g. [Netlify](https://www.netlify.com/)) with the following build settings:
-- Command: `npm run build`
-- Directory: `_site`
-
----
-
-## Packages
-
-Here are the docs for packages used in this boilerplate:
-- [Jekyll](https://jekyllrb.com/) - The static site generator
-- [Jekyll seo](https://github.com/jekyll/jekyll-seo-tag) - Adds seo tags to your pages
-- [Parcel](https://parceljs.org/) - The bundler that builds Tailwind
-- [Tailwind CSS](https://tailwindcss.com) - Provides utility classes to style pages instead of CSS
-- [Tailwind typography plugin](https://tailwindcss.com/docs/typography-plugin) - Makes Tailwind work nicely with markdown
-
----
-
-## 🤔 FAQ
-
-<details>
-  <summary><b>What is the tailwindcss-typography plugin and do I need it?</b></summary>
-
-- By default Tailwind [normalises](https://tailwindcss.com/docs/preflight) styles so headings, paragraphs, etc. look the same
-- But Jekyll is often used for blogs and other text heavy site where you often *want* default text styles
-- The typography plugin solves this and brings nice default styles to markdown generated content
-- It's completely optional and easy to activate for specific content via the `prose` classes
-- Note that it adds ~20kB to your final CSS file in prod. This isn't huge but is good to remove if you don't need it
-- To remove it simply delete it from the `plugins` section in your `tailwind.config.js` file
-</details>
-
-<details>
-  <summary><b>Why are CSS file changes slow to update?</b></summary>
-
-- When you update  the `index.css` file all Tailwind classes have to regenerate (via Parcel) which can take up to ~10 secs
-- In practise this isn't a common problem as most people don't update the file that often
-- If you *are* writing custom CSS then you can add non-Tailwind CSS files and add refer to them in the `head.html` file directly which skips the Parcel build process
-</details>
-
-<details>
-  <summary><b>Styles don't load when I build then open index.html locally</b></summary>
-
-- CSS may not load if you open the `_site/index.html` file directly in you local browser
-- To see the final site run `jekyll serve` and open the local server url ([localhost:4000](http://localhost:4000))
-- This should not be a problem when deployed to a server
-</details>
-
-<details>
-  <summary><b>Some of my styles disappear when deployed</b></summary>
-
--  Jekyll markdown may generate elements that are being purged by Tailwind CSS. [See these docs](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options) to whitelist elements or configure PurgeCSS further
-- Don't build up class names like `"my" + "-class"`. Use full names like `"my-class"` instead
-- Don't whitelist the `_site/` folder as this folder is not guaranteed to exist when deployed to a server
-</details>
-
-### Have another issue?
-Contact me by posting an issue. I'll be happy to help 🙂
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
