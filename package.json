@@ -23,7 +23,7 @@
     "build:dev": "cross-env NODE_ENV=development gulp",
     "build": "npm run build:production",
     "dev": "cross-env NODE_ENV=development gulp serve",
-    "start": "npm run dev"
+    "start": "rm -rf _site && npm run dev"
   },
   "repository": {
     "type": "git",

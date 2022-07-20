@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-US">
+<html class="no-js" lang="en-US" class="h-full bg-gray-100">
 
 <head>
-  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta itemprop="description" name="description"
     content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
-  <link rel="stylesheet" href={{"/assets/tailwind.min.css"}} referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" type="image/png" href={{ "/assets/favicon.ico" | relative_url }}>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/ico" href={{ "/assets/favicon.ico" | relative_url }}>
 </head>
+
+<body class="h-full">
+  <div class="min-h-full">
+    <nav class="bg-blue-800">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 text-white text-2xl">
+              <a href="/" class="hover:underline hover:text-gray-100">Penrose Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-gray-100 shadow">
+      <div class="max-w-3xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-xl font-bold text-gray-900">{{ page.title }}</h1>
+      </div>
+    </header>
+
+  </div>
