@@ -8,8 +8,8 @@ excerpt_separator: <!--more-->
 I wanted to know what the failure rate is for a florist's feedback loop, and would a change enhance the economics of the firm.
 <!--more--> 
 
-{: .text-black .text-xs .uppercase .font-semibold .pt-4}
-###### Published
+{: .text-black .text-xs .uppercase .font-semibold .py-1}
+Published
 
 {: .font-mono .text-xs .border-b .pb-4}
 {{ page.date | date: "%b %d, %Y" }}
