@@ -18,7 +18,7 @@ Published
 The floral arrangement business is interesting in that we find value in having a vendor pick our flowers, arrange, and deliver them to our event or person. The basic process seems straightforward, but the inconsistent follow-up with the final product might leave customers off-put. 
 
 {: .text-lg .border-b .font-semibold .py-4 .mb-2}
-### The basic complaint
+## The basic complaint
 
 {: .border-l-gray-500 .border-l-4 .p-2 .py-2 .my-2 .text-gray-900}
 > "... flowers that arrived looked nothing like the photos online ..." - Customer
