@@ -24,7 +24,7 @@ As a software engineer, some of the best results come from the consistent and re
 {: .pt-4 .px-1 .pb-2}
 The floral firm ordering process is straight forward but lacks the real-time feedback a customer may find helpful. When an order is received, the customer typically will not see delivery of the final project. I have laid out both the current and photo feedback in a state diagram. 
 
-![florist feedback loops](https://stately.ai/registry/machines/b9a966d9-a0a6-41bc-b7b6-d3aa6249e80a.png){: .md:rounded .md:shadow .md:p-2}
+![florist feedback loops]({{ "/assets/img/b9a966d9-a0a6-41bc-b7b6-d3aa6249e80a.png" }}){: .md:rounded .md:shadow .md:p-2}
 
 {: .pt-4 .px-1}
 The standard process is to receive an order, make the arrangement, and deliver it to the customer. However, if we adjust the process a bit with a photo before delivery. The customer would be informed about the nature of the final arrangement. Customers would have the opportunity to give feedback or appreciation before delivery. 
