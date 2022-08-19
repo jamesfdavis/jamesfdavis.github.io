@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Software Engineer Solopreneur"
+title: "Software Engineering"
 ---
 
 {% for post in site.posts %}

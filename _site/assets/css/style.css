@@ -563,6 +563,15 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+table {
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .container {
   width: 100%;
 }
